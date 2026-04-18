@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NanoCore VLSI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #020617;
+    color: #fff;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+header h1 {
+    color: #38bdf8;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px;
+}
+.hero-text {
+    max-width: 500px;
+}
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+.hero p {
+    opacity: 0.8;
+}
+.hero img {
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(56,189,248,0.3);
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: linear-gradient(45deg, #38bdf8, #0ea5e9);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SECTION */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    gap: 40px;
+}
+.section img {
+    width: 420px;
+    border-radius: 12px;
+}
+.section-text {
+    max-width: 500px;
+}
+
+/* CARDS */
+.features {
+    text-align: center;
+    padding: 80px 40px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    width: 250px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(56,189,248,0.3);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <h1>NanoCore</h1>
+    <nav>
+        <a href="#problem">Problem</a>
+        <a href="#features">Features</a>
+        <a href="#customers">Customers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Cloud-Based VLSI Platform for Startups</h2>
+        <p>Design, simulate, and verify chips at a fraction of traditional cost.</p>
+        <button class="btn">Get Started</button>
+    </div>
+
+    <img src="main image .jpeg">
+</section>
+
+<!-- PROBLEM + SOLUTION -->
+<section class="section" id="problem">
+    <img src="solution.jpeg">
+
+    <div class="section-text">
+        <h2>🚨 Problem</h2>
+        <p>Chip design costs exceed $100M and startups lack infrastructure.</p>
+
+        <h2 style="margin-top:20px;">💡 Solution</h2>
+        <p>Cloud platform providing EDA tools, RTL simulation, and verification.</p>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+    <h2>⚙️ Powerful Features</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>EDA Tools</h3>
+            <p>Industry-grade tools on cloud</p>
+        </div>
+        <div class="card">
+            <h3>RTL Simulation</h3>
+            <p>Fast and efficient workflows</p>
+        </div>
+        <div class="card">
+            <h3>IP Cores</h3>
+            <p>Pre-validated modules</p>
+        </div>
+        <div class="card">
+            <h3>Cloud Scale</h3>
+            <p>Unlimited compute resources</p>
+        </div>
+    </div>
+</section>
+
+<!-- CUSTOMERS -->
+<section class="section" id="customers">
+    <div class="section-text">
+        <h2>🎯 Target Customers</h2>
+        <p>Hardware startups, MSMEs, and university research labs.</p>
+    </div>
+
+    <img src="customer.jpeg">
+</section>
+
+<!-- CONTACT -->
+<section class="features" id="contact">
+    <h2>📩 Contact</h2>
+    <p>Email: contact@nanocore.com</p>
+    <p>Location: BIET Jhansi</p>
+</section>
+
+<footer>
+    <p>© 2026 NanoCore VLSI Solutions</p>
+</footer>
+
+</body>
+</html>
